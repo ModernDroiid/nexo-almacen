@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Lo que Google muestra en los resultados de búsqueda -->
+  <title>Nexo Almacén | Inventario multisede con seriales, firmas y actas en PDF</title>
+  <meta name="description" content="Nexo Almacén lleva el inventario de todas sus sedes: entradas, salidas, traslados y devoluciones con serial, firma digital y acta en PDF. Sepa qué equipo hay en cada bodega y en cada obra.">
+  <!-- Lo que se ve al compartir el enlace por WhatsApp o redes -->
+  <meta property="og:title" content="Nexo Almacén: cada equipo con firma, serial y destino">
+  <meta property="og:description" content="Inventario por sede, seriales, actas firmadas y control de lo que hay en cada obra o punto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta name="theme-color" content="#173f8a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23173f8a'/%3E%3Cpath d='M9 7v18M23 7v18' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3Cpath d='M9 13h14M9 21h14' stroke='%23f2661c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Datos estructurados: le explican a Google qué es Nexo Almacén -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Nexo Almacén",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, Android, Windows",
+    "description": "Inventario multisede con control de seriales, entradas, salidas, traslados y devoluciones con firma digital y acta en PDF.",
+    "inLanguage": "es-CO",
+    "publisher": { "@type": "Organization", "name": "Nexo Tech IA", "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" } }
+  }
+  </script>
+  <script defer src="sitio.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <header class="cabecera">
+    <div class="ancho cabecera-fila">
+      <a href="#" class="logo" aria-label="Nexo Almacén, inicio">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" class="logo-fondo"/>
+          <path d="M9 7v18M23 7v18" class="logo-columna"/>
+          <path d="M9 13h14M9 21h14" class="logo-viga"/>
+        </svg>
+        <span>Nexo <b>Almacén</b></span>
+      </a>
+      <nav class="menu" aria-label="Secciones de la página">
+        <a href="#recorrido">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#para-quien">Para quién</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a href="https://wa.me/573000000000" class="boton boton-chico js-whatsapp" target="_blank" rel="noopener">Pedir demostración</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================================================== -->
+    <!-- PORTADA: el acta de salida que se llena sola         -->
+    <!-- ===================================================== -->
+    <section class="portada">
+      <div class="ancho portada-grilla">
+        <div class="portada-texto">
+          <h1>Cada equipo que sale del almacén, con serial, firma y destino.</h1>
+          <p class="entrada">Nexo Almacén lleva el inventario de todas sus sedes y reemplaza las remisiones en papel y los Excel por sede. Entradas, salidas, traslados y devoluciones quedan registrados con quién entregó, quién recibió y a dónde fue cada serial.</p>
+          <div class="botones">
+            <a href="https://wa.me/573000000000" class="boton js-whatsapp" target="_blank" rel="noopener">Pedir una demostración</a>
+            <a href="#recorrido" class="enlace">Ver el recorrido de un equipo</a>
+          </div>
+        </div>
+
+        <figure class="acta-escena" aria-label="Ejemplo de un acta de salida de Nexo Almacén: tres productos con serial, firmas de quien entrega y quien recibe, y el stock de la sede actualizado">
+          <div class="acta" id="acta">
+            <div class="acta-cabeza">
+              <div>
+                <p class="acta-tipo">Acta de salida</p>
+                <p class="acta-numero">SAL-0142</p>
+              </div>
+              <p class="acta-fecha">14 oct. 2026<br>9:42 a. m.</p>
+            </div>
+
+            <dl class="acta-ruta">
+              <div><dt>Sale de</dt><dd>Sede Bogotá</dd></div>
+              <div><dt>Destino</dt><dd>Conjunto Reservas del Parque</dd></div>
+            </dl>
+
+            <table class="acta-items">
+              <thead>
+                <tr><th scope="col">Equipo</th><th scope="col">Serial</th><th scope="col" class="num">Cant.</th></tr>
+              </thead>
+              <tbody>
+                <tr class="acta-fila"><td>Cámara IP bullet 4 MP</td><td class="serial">6J0A2F7PAG</td><td class="num">1</td></tr>
+                <tr class="acta-fila"><td>Cámara IP bullet 4 MP</td><td class="serial">6J0A2F7Q11</td><td class="num">1</td></tr>
+                <tr class="acta-fila"><td>DVR 8 canales</td><td class="serial">K72290418</td><td class="num">1</td></tr>
+                <tr class="acta-fila"><td>Cable UTP Cat6, rollo 305 m</td><td class="serial sin-serial">Sin serial</td><td class="num">2</td></tr>
+              </tbody>
+            </table>
+
+            <div class="acta-firmas">
+              <div class="firma">
+                <svg viewBox="0 0 160 48" aria-hidden="true">
+                  <path class="trazo" pathLength="1" d="M6 34c10-18 18-24 22-14s-6 18 2 12 14-22 20-18-4 20 4 16c9-4 12-14 20-14s2 12 10 10 10-10 18-8 8 8 16 4 12-6 22-6"/>
+                </svg>
+                <p>Entrega<br><span>Carlos Méndez, almacén</span></p>
+              </div>
+              <div class="firma">
+                <svg viewBox="0 0 160 48" aria-hidden="true">
+                  <path class="trazo" pathLength="1" d="M10 30c6-14 16-20 18-10s-10 14-4 16 10-16 18-18 0 16 8 14 8-12 16-12-2 14 8 12 12-14 20-12 6 10 14 8 10-4 16-2"/>
+                </svg>
+                <p>Recibe<br><span>Andrea Ruiz, técnica</span></p>
+              </div>
+            </div>
+
+            <p class="sello" aria-hidden="true">Firmada</p>
+          </div>
+
+          <div class="stock-aviso" id="stock-aviso">
+            <span class="stock-producto">Cámara IP bullet 4 MP en Sede Bogotá</span>
+            <span class="stock-cifra"><span class="stock-antes">12</span><span class="stock-ahora">10</span> disponibles</span>
+          </div>
+
+          <button type="button" class="repetir" id="repetir" hidden>Repetir</button>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- EL PROBLEMA                                          -->
+    <!-- ===================================================== -->
+    <section class="seccion seccion-borde">
+      <div class="ancho problema">
+        <h2>¿Dónde está la cámara que salió el martes?</h2>
+        <div class="problema-texto">
+          <p>Si la respuesta está en una remisión de papel, en el Excel de otra sede o en el celular del técnico, no la tiene. Y cuando falta un equipo, nadie firmó nada.</p>
+          <p>Nexo Almacén guarda cada movimiento en un solo lugar: qué entró, qué salió, para dónde, quién lo entregó y quién lo recibió. Desde cualquier sede, en el momento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- RECORRIDO DE UN EQUIPO (secuencia real: pasos)       -->
+    <!-- ===================================================== -->
+    <section id="recorrido" class="seccion seccion-papel">
+      <div class="ancho">
+        <div class="encabezado">
+          <h2>La vida de un equipo, de la bodega a la obra y de vuelta</h2>
+          <p>Siga a una cámara con el serial 6J0A2F7PAG. Cada paso queda en su hoja de vida.</p>
+        </div>
+
+        <div class="recorrido">
+          <ol class="pasos" role="tablist" aria-label="Pasos del recorrido">
+            <li role="presentation"><button role="tab" id="t-entra" aria-controls="p-recorrido" aria-selected="true" data-paso="0"><span class="paso-num">1</span>Entra</button></li>
+            <li role="presentation"><button role="tab" id="t-traslado" aria-controls="p-recorrido" aria-selected="false" tabindex="-1" data-paso="1"><span class="paso-num">2</span>Se traslada</button></li>
+            <li role="presentation"><button role="tab" id="t-sale" aria-controls="p-recorrido" aria-selected="false" tabindex="-1" data-paso="2"><span class="paso-num">3</span>Sale a una obra</button></li>
+            <li role="presentation"><button role="tab" id="t-vuelve" aria-controls="p-recorrido" aria-selected="false" tabindex="-1" data-paso="3"><span class="paso-num">4</span>Vuelve</button></li>
+          </ol>
+
+          <div class="recorrido-cuerpo" id="p-recorrido" role="tabpanel" aria-labelledby="t-entra">
+            <div class="recorrido-texto">
+              <div class="paso-texto" data-paso="0">
+                <h3>Llega del proveedor</h3>
+                <p>El almacenista registra la entrada con la factura del proveedor y escanea o escribe el serial de cada unidad. El stock de la sede sube en ese momento.</p>
+              </div>
+              <div class="paso-texto" data-paso="1" hidden>
+                <h3>Pasa a otra sede</h3>
+                <p>Cali necesita cámaras y Bogotá tiene de sobra. El traslado sale con acta firmada; el equipo deja de contar en una sede y empieza a contar en la otra, sin que nadie mueva un Excel.</p>
+              </div>
+              <div class="paso-texto" data-paso="2" hidden>
+                <h3>Sale a la obra con acta firmada</h3>
+                <p>El técnico firma en la pantalla al recibir. Se genera el acta en PDF y la portería de la sede recibe el aviso para dejarlo salir. La obra queda con ese serial a su nombre.</p>
+              </div>
+              <div class="paso-texto" data-paso="3" hidden>
+                <h3>Regresa al almacén</h3>
+                <p>Lo que sobró en la obra vuelve con una devolución: se marcan los seriales que regresan y vuelven al stock disponible. La obra solo conserva lo que de verdad quedó instalado.</p>
+              </div>
+            </div>
+
+            <div class="hoja-vida" aria-label="Hoja de vida del serial 6J0A2F7PAG">
+              <div class="hoja-cabeza">
+                <p class="hoja-titulo">Cámara IP bullet 4 MP</p>
+                <p class="hoja-serial">Serial 6J0A2F7PAG</p>
+              </div>
+              <ol class="hoja-eventos">
+                <li data-paso="0">
+                  <span class="evento-tipo tipo-entrada">Entrada</span>
+                  <span class="evento-detalle">Sede Bogotá, factura FV-3381</span>
+                  <span class="evento-fecha">2 oct.</span>
+                </li>
+                <li data-paso="1">
+                  <span class="evento-tipo tipo-traslado">Traslado</span>
+                  <span class="evento-detalle">Bogotá a Cali, acta TRA-0057</span>
+                  <span class="evento-fecha">6 oct.</span>
+                </li>
+                <li data-paso="2">
+                  <span class="evento-tipo tipo-salida">Salida</span>
+                  <span class="evento-detalle">Obra Torres del Valle, acta SAL-0151</span>
+                  <span class="evento-fecha">9 oct.</span>
+                </li>
+                <li data-paso="3">
+                  <span class="evento-tipo tipo-devolucion">Devolución</span>
+                  <span class="evento-detalle">Regresa a Sede Cali, DEV-0023</span>
+                  <span class="evento-fecha">20 oct.</span>
+                </li>
+              </ol>
+              <p class="hoja-estado"><span class="hoja-estado-punto"></span><span id="hoja-ubicacion">Disponible en Sede Bogotá</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FUNCIONES                                            -->
+    <!-- ===================================================== -->
+    <section id="funciones" class="seccion">
+      <div class="ancho">
+        <div class="encabezado">
+          <h2>Todo lo que hoy se hace en papel y en Excel</h2>
+          <p>Un solo sistema para el almacén, las sedes, la portería y la gerencia.</p>
+        </div>
+
+        <ul class="funciones">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12v9M12 12l8-4.5M12 12l-8-4.5"/></svg>
+            <h3>Inventario por sede</h3>
+            <p>El stock de cada bodega, y de todas juntas. Cada producto tiene su stock mínimo y avisa cuando hay que reponer.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6v12M8 6v12M11 6v12M15 6v12M18 6v12M20 6v12"/></svg>
+            <h3>Control por serial</h3>
+            <p>Los equipos que lo necesitan se manejan unidad por unidad. Busca un serial y sabe dónde está y por dónde ha pasado.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17c3-6 5-8 7-5s3 4 5 0 3-4 4-3"/><path d="M4 21h16"/></svg>
+            <h3>Firma digital y acta en PDF</h3>
+            <p>Entrega y recibe firman en la pantalla del computador, la tableta o el celular. El acta sale lista para imprimir o enviar.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <h3>Lo que hay en cada obra</h3>
+            <p>Por cada punto, cliente u obra: todo lo que se le ha enviado, lo que ha devuelto y lo que sigue allá.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M10 9h4M10 13h4M10 17h2"/></svg>
+            <h3>Solicitudes de compra</h3>
+            <p>Las sedes piden equipo y la gerencia aprueba o rechaza con un motivo. Se acabó la requisición en Excel por correo.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-7h6v7"/></svg>
+            <h3>Portería conectada</h3>
+            <p>La portería ve las salidas autorizadas de su sede y su acta. Si no está en el sistema, no sale.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3 3 0 0 1 0 6M18 14c1.8.8 3 2.7 3 6"/></svg>
+            <h3>Permisos por rol</h3>
+            <p>Gerencia ve todo, cada sede trabaja solo lo suyo, consulta solo mira y portería solo verifica salidas.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Historial de cambios</h3>
+            <p>Quién creó, editó o eliminó qué, y cuándo. Para cuando alguien pregunte por qué cambió una cantidad.</p>
+          </li>
+        </ul>
+
+        <p class="funciones-nota">Funciona en el navegador y se puede instalar como aplicación en el computador o el celular, sin tiendas de aplicaciones.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- PARA QUIÉN                                           -->
+    <!-- ===================================================== -->
+    <section id="para-quien" class="seccion seccion-oscura">
+      <div class="ancho para-quien">
+        <h2>Hecho para empresas que despachan equipos a la calle</h2>
+        <ul class="sectores">
+          <li>
+            <h3>Seguridad electrónica y CCTV</h3>
+            <p>Cámaras, grabadores y alarmas con serial que van de la bodega a cada cliente.</p>
+          </li>
+          <li>
+            <h3>Seguridad privada</h3>
+            <p>Radios, dotación y equipos que se entregan a cada puesto y deben volver.</p>
+          </li>
+          <li>
+            <h3>Telecomunicaciones</h3>
+            <p>Equipos de red, cable y herramienta repartidos entre cuadrillas y sedes.</p>
+          </li>
+          <li>
+            <h3>Contratistas y obras</h3>
+            <p>Material que sale a varias obras a la vez y hay que saber cuánto quedó en cada una.</p>
+          </li>
+        </ul>
+        <p class="para-quien-nota">Nació en el almacén de una empresa de seguridad con cinco sedes en Colombia, y hoy es el sistema con el que trabaja todos los días.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CÓMO EMPEZAMOS (secuencia: pasos)                    -->
+    <!-- ===================================================== -->
+    <section class="seccion">
+      <div class="ancho">
+        <div class="encabezado">
+          <h2>Cómo empezamos</h2>
+        </div>
+        <ol class="arranque">
+          <li>
+            <h3>Nos cuenta cómo trabaja</h3>
+            <p>Sus sedes, quién despacha, a dónde salen los equipos y qué formatos usa hoy.</p>
+          </li>
+          <li>
+            <h3>Cargamos su inventario</h3>
+            <p>Pasamos sus productos, seriales, sedes y usuarios desde los archivos que ya tiene.</p>
+          </li>
+          <li>
+            <h3>Su equipo empieza a registrar</h3>
+            <p>Acompañamos las primeras entradas y salidas hasta que el almacén lo maneje solo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- PREGUNTAS                                            -->
+    <!-- ===================================================== -->
+    <section id="preguntas" class="seccion seccion-papel">
+      <div class="ancho preguntas-grilla">
+        <h2>Preguntas frecuentes</h2>
+        <div class="preguntas">
+          <details>
+            <summary>¿Hay que instalar algo?</summary>
+            <p>No. Se abre en el navegador desde cualquier computador, tableta o celular. Si lo prefiere, se instala como aplicación con un clic para abrirlo en su propia ventana.</p>
+          </details>
+          <details>
+            <summary>¿Sirve si tengo una sola bodega?</summary>
+            <p>Sí. Con una sede funciona igual; cuando abra otra, solo se agrega y el inventario empieza a separarse por sede.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa si no tengo cómo firmar en pantalla?</summary>
+            <p>La firma se puede hacer con el dedo en un celular o tableta, o con el mouse. Si en algún momento no hay cómo firmar, el movimiento se registra igual y queda sin firma.</p>
+          </details>
+          <details>
+            <summary>¿Todos los productos necesitan serial?</summary>
+            <p>No. Usted decide cuáles se controlan por serial (cámaras, radios, grabadores) y cuáles por cantidad (cable, tornillería, conectores).</p>
+          </details>
+          <details>
+            <summary>¿Quién puede ver y cambiar qué?</summary>
+            <p>Cada usuario tiene un rol: administrador, sede, consulta o portería. Una sede solo ve y mueve su propio inventario; la gerencia ve todas.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cuesta?</summary>
+            <p>Depende del número de sedes y usuarios. Escríbanos y le enviamos una propuesta para su caso.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- CIERRE                                               -->
+    <!-- ===================================================== -->
+    <section id="contacto" class="cierre">
+      <div class="ancho cierre-fila">
+        <div>
+          <h2>Véalo funcionando con su propio inventario</h2>
+          <p>Le mostramos Nexo Almacén con productos y sedes como los suyos, en una llamada de 30 minutos.</p>
+        </div>
+        <a href="https://wa.me/573000000000" class="boton js-whatsapp" target="_blank" rel="noopener">Pedir demostración por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="ancho pie-fila">
+      <p><b>Nexo Almacén</b> es un producto de Nexo Tech IA, Bogotá, Colombia.</p>
+      <p>© 2026 Nexo Tech IA</p>
+    </div>
+  </footer>
+</body>
+</html>
