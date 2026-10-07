@@ -10,7 +10,7 @@
   // ---------------------------------------------------------
   // Número de WhatsApp: se cambia aquí y aplica a todos los botones
   // ---------------------------------------------------------
-  const WHATSAPP = "573000000000";
+  const WHATSAPP = "573125579526";
   const MENSAJE = "Hola, quiero ver una demostración de Nexo Almacén.";
   document.querySelectorAll(".js-whatsapp").forEach(function (a) {
     a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAJE);
